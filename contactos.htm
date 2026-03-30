@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Floristería Bolivia</title>
+
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+<style>
+:root{
+--rosa:#e91e63;
+--oscuro:#2b2b2b;
+}
+
+body{
+background: linear-gradient(135deg, #fff0f5, #f8bbd0);
+font-family: Arial, sans-serif;
+padding-top:80px;
+}
+
+.contacto-box{
+background:#ffffff;
+border-radius:20px;
+padding:40px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.titulo{
+color:#e91e63;
+font-weight:bold;
+}
+
+.red-btn{
+display:block;
+width:100%;
+margin:10px 0;
+padding:12px;
+border-radius:30px;
+text-align:center;
+text-decoration:none;
+color:#fff;
+font-weight:bold;
+transition:0.3s;
+}
+
+.tiktok{ background:#000; }
+.facebook{ background:#1877f2; }
+.instagram{ background: linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7); }
+.whatsapp{ background:#25d366; }
+
+.red-btn:hover{
+transform: scale(1.05);
+opacity:0.9;
+}
+
+.navbar-custom{
+background: rgba(255,255,255,0.7);
+backdrop-filter: blur(10px);
+padding: 12px 0;
+}
+
+.navbar-custom .nav-link{
+color: var(--oscuro);
+margin: 0 10px;
+}
+
+.btn-contacto{
+background: linear-gradient(45deg, var(--rosa), #ff80ab);
+color:#fff;
+border-radius:30px;
+padding:8px 20px;
+border:none;
+}
+
+
+/* ===== NAVBAR ===== */
+.navbar-custom{
+background: rgba(255,255,255,0.7);
+backdrop-filter: blur(10px);
+transition: 0.3s;
+padding: 12px 0;
+}
+
+.navbar-custom .nav-link{
+color: var(--oscuro);
+font-weight: 500;
+margin: 0 10px;
+position: relative;
+}
+
+.navbar-custom .nav-link::after{
+content:"";
+position:absolute;
+width:0%;
+height:2px;
+background: var(--rosa);
+left:0;
+bottom:0;
+transition:0.3s;
+}
+
+.navbar-custom .nav-link:hover{
+color: var(--rosa);
+}
+
+.navbar-custom .nav-link:hover::after{
+width:100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+<div class="container">
+
+<a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+<span class="logo-icon me-2">🌸</span>
+Flores Eternas
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto align-items-lg-center text-center">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="nosotros.html">Nosotros</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="galeria.html">Galería</a>
+</li>
+
+<li class="nav-item ms-lg-3">
+<a class="btn btn-contacto" href="contactos.htm">Contacto</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+<div class="row g-4">
+
+<!-- IZQUIERDA (INFO + MAPA) -->
+<div class="col-lg-6 d-flex flex-column">
+
+<div class="contacto-box text-center mb-4">
+<h2 class="titulo mb-4">🌸 Contáctanos</h2>
+<p>Elige tu red favorita para comunicarte con nosotros</p>
+
+<a href="https://wa.me/59173053670" class="red-btn whatsapp">WhatsApp</a>
+<a href="#" class="red-btn facebook">Facebook</a>
+<a href="#" class="red-btn instagram">Instagram</a>
+<a href="https://www.tiktok.com/@emy_cosmetics_2026" target="_blank" class="red-btn tiktok">TikTok</a>
+</div>
+
+<div class="ratio ratio-16x9 shadow rounded">
+<iframe src="https://www.google.com/maps?q=La+Paz+Bolivia&output=embed" style="border:0;"></iframe>
+</div>
+
+</div>
+
+<!-- DERECHA (FORMULARIO) -->
+<div class="col-lg-6">
+<div class="card shadow-lg border-0 rounded-4 p-4 h-100">
+
+<h4 class="text-center mb-4 fw-bold" style="color:#e91e63;">Crear Cuenta</h4>
+
+<form>
+
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Nombre completo">
+</div>
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Correo">
+</div>
+</div>
+
+<div class="mb-3">
+<input type="number" class="form-control" placeholder="Teléfono">
+</div>
+
+<div class="row">
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Usuario">
+</div>
+<div class="col-md-6 mb-3">
+<input type="password" class="form-control" placeholder="Contraseña">
+</div>
+</div>
+
+<div class="text-center mt-4">
+<button class="btn px-4" style="background:#e91e63;color:white;">Registrarse</button>
+</div>
+
+</form>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
